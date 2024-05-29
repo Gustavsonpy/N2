@@ -1,0 +1,26 @@
+GET http://localhost:3000/peca HTTP/1.1
+Content-Type: application/json
+
+### Pesquisa por nome (end-point)
+GET http://localhost:3000/peca/Martelo HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/peca HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_peca": "Martelo",
+    "descr_peca": "Peca que prega os pregos"
+}
+###
+PUT http://localhost:3000/peca/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_peca": "Furadeira",
+    "descr_peca": "Cortar madeira"
+}
+###
+DELETE http://localhost:3000/peca/5 HTTP/1.1
+Content-Type: application/json
